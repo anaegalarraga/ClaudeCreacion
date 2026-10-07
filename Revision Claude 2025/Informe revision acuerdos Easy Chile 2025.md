@@ -16,7 +16,7 @@ Todos los importes están en pesos chilenos.
 | 1000071 HOFFENS | 4.528.324 (B2B) + Escala por validar | CON RECLAMO (BORRADOR) | Condiciones vacía, macro sin correr |
 | 1000104 LOUISIANA PACIFIC | No se puede calcular | PENDIENTE | – |
 | 1000211 SAINT-GOBAIN WEBER | Todo negativo | SIN RECLAMO | OK (2 observaciones) |
-| 1000730 NMC | 15.237.028 (Escala Crecimiento Mayorista) | CON RECLAMO | Falta la Escala MY en la Presentación |
+| 1000730 NMC | 15.237.028 (Escala Crecimiento Mayorista) | CON RECLAMO | **Corregido**: Escala MY en la Presentación y B2B fuera de las secciones 13 y 43 |
 | 1001339 MADERAS ARAUCO | No se puede calcular | PENDIENTE | El 7% de Centralizada no tiene respaldo |
 | 1003494 CINTAC | 4.224.268 (B2B) | CON RECLAMO | Condiciones vacía, macro sin correr |
 | 4000006878 KNAUF | Negativo (−17,1 MM) | SIN RECLAMO (antes daba CON RECLAMO) | **Corregido**: error en la fórmula de enero |
@@ -140,7 +140,10 @@ Todos los importes están en pesos chilenos.
 5. **Conclusión:** CON RECLAMO por 15.237.028, que es la **Escala Crecimiento Mayorista no pagada**.
    - Ana la tiene calculada en "Base Calculo" (14.534.298), pero no la pasó a la Presentación.
    - El PAGADO de escala incluye OF-9514-2 (15.197.335), que Ana tomó como escala. Hay que confirmar ese criterio.
-   - En Condiciones, el B2B 0,15% está cargado también en las secciones 13 y 43, que son solo Mayorista, y el Mayorista tiene B2B No. Hay que sacarlo de esas secciones.
+   - **Corregido en la Presentación:** en la sección 57, la Escala Crecimiento DEBIDO (T43:T54) pasa a ser Retail + Mayorista, con la fórmula `'Base Calculo'!C22+'Base Calculo'!C23`, etc. El total pasa de 20.192.181 a 34.726.479.
+   - **Corregido en Condiciones:** saqué el B2B 0,15% de las secciones 13 y 43, que son solo Mayorista (el Mayorista tiene B2B No).
+   - En las secciones 49 y 57 sigue aplicándose el 0,15% también a las compras Mayoristas, unos 491.000 de más. Como Otros ya da negativo, no cambia la conclusión.
+   - El total general de la Presentación da negativo por la columna Aportes Manuales (−28,6 MM: multas, más las cuotas de la escala 2022). Esa columna no se netea con la Escala Crecimiento.
 
 ## 1001339 – MADERAS ARAUCO S.A.
 
