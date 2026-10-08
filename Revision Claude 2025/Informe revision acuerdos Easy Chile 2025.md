@@ -19,7 +19,7 @@ Todos los importes están en pesos chilenos.
 | 1000730 NMC | 15.237.028 (Escala Crecimiento) | CON RECLAMO | **Corregido**: Escala MY en la Presentación y B2B fuera de secc. 13/43 · Presentación armada |
 | 1001339 MADERAS ARAUCO | No se puede calcular | PENDIENTE | El 7% de Centralizada no tiene respaldo |
 | 1003494 CINTAC | 4.224.268 (B2B) | CON RECLAMO | Presentación armada · escalas en toneladas pendientes |
-| 4000006878 KNAUF | Negativo (−17,1 MM) | SIN RECLAMO (antes daba CON RECLAMO) | **Corregido**: error en la fórmula de enero |
+| 4000006878 KNAUF | Neteo Pub+Fijo −22.173.522 (MY solo +4.765.074) | SIN RECLAMO | **Corregido**: fórmula de enero + entregas 2026 en diciembre |
 | 4000008837 PIMARES | 19.724.595 (Escala Fija + Publicidad) | CON RECLAMO | **Corregido**: Escala Fija 3,5% · Escala Crecimiento no llega al primer tramo (validado por Ana) · Presentación armada |
 | 4000008885 WMART | 874.607 (B2B) | CON RECLAMO | OK · Presentación armada |
 | 4000008973 TAPIA Y ALVAREZ | −8.022.825 | RESULTADO NEGATIVO, analizado sin reclamo | OK |
@@ -297,3 +297,19 @@ Ana validó que la Escala Crecimiento **no llega al primer tramo**. La saqué de
 | | DEBIDO | PAGADO | DIF |
 |---|---:|---:|---:|
 | Escala Fija 3,5% + Publicidad | 29.746.718 | 10.022.123 | **19.724.595** |
+
+## Actualización – Knauf (entregas 2026)
+
+Criterio de Ana: todo lo que trae la descarga 2025, incluidas las entregas de 2026 de OC 2025, se toma en diciembre 2025 y se bonifica. En la "Base de Calculo", la columna M (diciembre) pasa a ser diciembre 2025 + entregas 2026 (fórmula `=dic+2026`). La nota de la fila 27 quedó actualizada.
+
+| Mayorista | Entregas 2026 sumadas a diciembre | DEBIDO total |
+|---|---:|---:|
+| Placas 10% | 199.594.869 | 100.772.869 |
+| Lanas 8% | 17.398.199 | 10.576.430 |
+| Resto 5% | 9.356.175 | 10.214.112 |
+| **Total** | | **121.563.411** |
+
+- **Publicidad (rebate Mayorista):** DEBIDO 121.563.411 · PAGADO 116.798.337 · **+4.765.074**.
+- **Escala Fija (rebate Retail, sin acuerdo Retail):** PAGADO 26.938.596.
+- **Neteo del grupo Pub + Fijo:** −22.173.522 → **SIN RECLAMO**.
+- **Punto a validar:** la NC "ACUERDOS FEBRERO 2026" (25/02/2026) se liquidó en 2026, así que no se cuenta.
