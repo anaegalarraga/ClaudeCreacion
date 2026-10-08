@@ -12,11 +12,11 @@ Todos los importes están en pesos chilenos.
 
 | Proveedor | Saldo a reclamar | Conclusión | Excel |
 |---|---:|---|---|
-| 1000044 LEGRAND | 827.800 (Publicidad + Fijo) | CON RECLAMO (BORRADOR) | Presentación armada (BORRADOR) |
+| 1000044 LEGRAND | 827.800 (Publicidad + Fijo; error puntual 719.723) | CON RECLAMO (BORRADOR) | Presentación armada (BORRADOR) |
 | 1000071 HOFFENS | 108.581.846 (Pub+Fijo 33.349.405 · Escala 70.704.117 · B2B 4.528.324) | CON RECLAMO (BORRADOR) | Presentación armada (BORRADOR) |
 | 1000104 LOUISIANA PACIFIC | No se puede calcular | PENDIENTE | – |
 | 1000211 SAINT-GOBAIN WEBER | Todo negativo | SIN RECLAMO | OK (2 observaciones) |
-| 1000730 NMC | 30.434.363 (Escala Crecimiento) | CON RECLAMO | **Corregido**: Escala MY, B2B en secc. 13/43, OF-9514-2 fuera del PAGADO · Presentación armada |
+| 1000730 NMC | 15.237.028 (Escala Crecimiento) | CON RECLAMO | **Corregido**: Escala MY en la Presentación y B2B fuera de secc. 13/43 · Presentación armada |
 | 1001339 MADERAS ARAUCO | No se puede calcular | PENDIENTE | El 7% de Centralizada no tiene respaldo |
 | 1003494 CINTAC | 4.224.268 (B2B) | CON RECLAMO | Presentación armada · escalas en toneladas pendientes |
 | 4000006878 KNAUF | Negativo (−17,1 MM) | SIN RECLAMO (antes daba CON RECLAMO) | **Corregido**: error en la fórmula de enero |
@@ -27,7 +27,7 @@ Todos los importes están en pesos chilenos.
 
 ## Actualización 08/10 (con tus respuestas)
 
-- **NMC – OF-9514-2:** según tu regla, la OF se toma solo si cierra el saldo. El saldo de escala sin la OF es 30.434.363 y la OF (15.197.335) no lo cubre, así que **no se toma**. En el Excel la pasé a "Aportes Manuales" (VI_Debitos, filas 378–412, columna U). Escala Crecimiento: DEBIDO 34.726.479 · PAGADO 4.292.116 (acuerdo 233041) · **DIF 30.434.363**.
+- **NMC – OF-9514-2:** en la hoja AportesManuales, la referencia 37184713 dice **"Cobro escala 2025 NMC"** (15.197.335). Es el cobro de la Escala 2025, así que **se toma como PAGADO**, como lo había hecho Ana. Escala Crecimiento: DEBIDO 34.726.479 · PAGADO 19.489.451 · **DIF 15.237.028**. El Excel de NMC queda como en la versión anterior (Escala MY + B2B), sin reclasificar la OF.
 - **Hoffens – criterio de Julián 2024:**
   - **Pub + Fijo:** CL5101 13%, CL5821 14%, CL5822 14%, CL5840 15% y Mayorista 5%. Escala Crecimiento 8% sobre todo REMA. B2B 0,15%.
   - **PAGADO:** los rebates se toman por el mes de la compra. El rebate de diciembre 2024 (cobrado en enero 2025) no cuenta. El de diciembre 2025 (cobrado el 30/01/2026, 19.578.357) sí. La "ESCALA 2024" (253 MM) es del año pasado.
@@ -50,6 +50,20 @@ Todos los importes están en pesos chilenos.
 - **B2B con piso UF:** apliqué el criterio del modelo Passol, mes a mes el mayor entre 1 UF y el 0,15%. En todos los casos con reclamo el 0,15% mensual supera la UF, así que no cambia nada.
 - **LP = Louisiana Pacific (1000104):** en 2024 Julián tomó el "2% rapel mensual OSB-Protec" sobre una base de 1.821 MM, menos 7,5% de flete, sacada de la información comercial de LP. Para 2025 hace falta esa misma información comercial.
 - **Verificación:** recalculé NMC, Knauf y Pimares con recálculo completo. NMC Escala DEBIDO 34.726.479, Knauf Publicidad DEBIDO 99.744.260. Coinciden con el informe.
+
+
+## Comparación con 2024 (regla de Luciana: un error solo se corrige si cambió el acuerdo)
+
+En 2024 los 11 proveedores quedaron "Analizado sin reclamo" en el ranking.
+
+| Proveedor | ¿Cambió el AC 2024→2025? | ¿Error de 2024 repetido? | Error puntual 2025 |
+|---|---|---|---|
+| NMC | Sí: RT y MY nuevos (01/01/2025) | No. En 2024 la escala MY (3,5%) se cobró. | La Escala MY 2025 (4%) no se cobró por sistema. El "Cobro escala 2025 NMC" manual (15,2 MM) no alcanza: faltan 15.237.028. |
+| Pimares | Sí: Fijo pasa de 2% a 3,5%; escala nueva | No. En 2024 el 2% se cobró completo. | (1) Ene–jul se siguió cobrando el 2% del AC 2024. (2) **Desde mediados de agosto no se cobra la Escala Fija** (sep, oct y nov en 0; dic 212.766). (3) No se cobró la escala 1%. |
+| Cintac | Sí: RT, RT CL4321 y MY nuevos | Parcial. En 2024 el B2B se cobró desde junio ("se accedió a la plataforma en junio"). | B2B: el acuerdo 235102 solo liquidó enero (667.255). De febrero a diciembre no hay débitos. |
+| WMART | Sí: AC REMA 2025 nuevo | **Sí.** En el ranking 2023 figura "Pendiente B2B UF. No tiene débitos". | El acuerdo 235010 tiene cargadas Z033 0,15% y Z034 1 UF (01.01–31.12.2025), pero **no tiene ninguna liquidación**. |
+| Legrand | RT no (rige AC 2024); MY sí | No (2024 dio +71.481). | **Doc. 6178844931 del 07/12/2025:** debitó Escala Fija (−1.439.445) sin la Publicidad que la acompaña (2:1). **Faltan 719.723.** El resto (108.077) son diferencias de diciembre. |
+| Hoffens | RT no (rigen AC 2024 por surtido); MY sí | En 2024 los "DIFERENCIAL 2024" (B2B y rebates) se cobraron el 31/03/2025. En el ranking (Casos semana 6) figura "No es igual en SAP que en el AC". | No encontré un error puntual. El 31/03/2026 hay 81,8 MM de aportes sin descripción (refs. 37597518/21/22–26, 37598007/08), probablemente los diferenciales 2025. Con eso, Pub + Fijo y B2B cerrarían. La escala pagada (170,8 MM) es el 8% de 2.135 MM, una base que no coincide con la web (Hoffens la calcula con sus números). Hace falta el texto de esas facturas (export de aportes manuales como el de NMC). |
 
 ---
 
