@@ -20,7 +20,7 @@ Todos los importes están en pesos chilenos.
 | 1001339 MADERAS ARAUCO | No se puede calcular | PENDIENTE | El 7% de Centralizada no tiene respaldo |
 | 1003494 CINTAC | 4.224.268 (B2B) | CON RECLAMO | Presentación armada · escalas en toneladas pendientes |
 | 4000006878 KNAUF | Negativo (−17,1 MM) | SIN RECLAMO (antes daba CON RECLAMO) | **Corregido**: error en la fórmula de enero |
-| 4000008837 PIMARES | 28.223.657 (Fijo + Escala) | CON RECLAMO (BORRADOR por la ZME80) | **Corregido** · Presentación armada |
+| 4000008837 PIMARES | 19.724.595 (Escala Fija + Publicidad) | CON RECLAMO | **Corregido**: Escala Fija 3,5% · Escala Crecimiento no llega al primer tramo (validado por Ana) · Presentación armada |
 | 4000008885 WMART | 874.607 (B2B) | CON RECLAMO | OK · Presentación armada |
 | 4000008973 TAPIA Y ALVAREZ | −8.022.825 | RESULTADO NEGATIVO, analizado sin reclamo | OK |
 
@@ -59,7 +59,7 @@ En 2024 los 11 proveedores quedaron "Analizado sin reclamo" en el ranking.
 | Proveedor | ¿Cambió el AC 2024→2025? | ¿Error de 2024 repetido? | Error puntual 2025 |
 |---|---|---|---|
 | NMC | Sí: RT y MY nuevos (01/01/2025) | No. En 2024 la escala MY (3,5%) se cobró. | La Escala MY 2025 (4%) no se cobró por sistema. El "Cobro escala 2025 NMC" manual (15,2 MM) no alcanza: faltan 15.237.028. |
-| Pimares | Sí: Fijo pasa de 2% a 3,5%; escala nueva | No. En 2024 el 2% se cobró completo. | (1) Ene–jul se siguió cobrando el 2% del AC 2024. (2) **Desde mediados de agosto no se cobra la Escala Fija** (sep, oct y nov en 0; dic 212.766). (3) No se cobró la escala 1%. |
+| Pimares | Sí: Fijo pasa de 2% a 3,5%; escala nueva | No. En 2024 el 2% se cobró completo. | (1) Ene–jul se siguió cobrando el 2% del AC 2024. (2) **Desde mediados de agosto no se cobra la Escala Fija** (sep, oct y nov en 0; dic 212.766). (3) La Escala Crecimiento no llega al primer tramo: no corresponde. |
 | Cintac | Sí: RT, RT CL4321 y MY nuevos | Parcial. En 2024 el B2B se cobró desde junio ("se accedió a la plataforma en junio"). | B2B: el acuerdo 235102 solo liquidó enero (667.255). De febrero a diciembre no hay débitos. |
 | WMART | Sí: AC REMA 2025 nuevo | **Sí.** En el ranking 2023 figura "Pendiente B2B UF. No tiene débitos". | El acuerdo 235010 tiene cargadas Z033 0,15% y Z034 1 UF (01.01–31.12.2025), pero **no tiene ninguna liquidación**. |
 | Legrand | RT no (rige AC 2024); MY sí | No (2024 dio +71.481). | **Doc. 6178844931 del 07/12/2025:** debitó Escala Fija (−1.439.445) sin la Publicidad que la acompaña (2:1). **Faltan 719.723.** El resto (108.077) son diferencias de diciembre. |
@@ -289,3 +289,11 @@ En 2024 los 11 proveedores quedaron "Analizado sin reclamo" en el ranking.
 | Otros 0,15% | 1.046.293 | 1.213.081 | −166.788 |
 
 5. **Conclusión:** RESULTADO NEGATIVO, analizado sin reclamo. Lo cargado por Ana es correcto.
+
+## Actualización – Pimares
+
+Ana validó que la Escala Crecimiento **no llega al primer tramo**. La saqué de Condiciones y de la Presentación. Queda el reclamo por Escala Fija + Publicidad:
+
+| | DEBIDO | PAGADO | DIF |
+|---|---:|---:|---:|
+| Escala Fija 3,5% + Publicidad | 29.746.718 | 10.022.123 | **19.724.595** |
