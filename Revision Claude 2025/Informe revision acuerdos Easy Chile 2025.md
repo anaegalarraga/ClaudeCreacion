@@ -20,7 +20,7 @@ Todos los importes están en pesos chilenos.
 | 1001339 MADERAS ARAUCO | No se puede calcular | PENDIENTE | El 7% de Centralizada no tiene respaldo |
 | 1003494 CINTAC | 4.224.268 (B2B) | CON RECLAMO | Presentación armada · escalas en toneladas pendientes |
 | 4000006878 KNAUF | Negativo (−17,1 MM) | SIN RECLAMO (antes daba CON RECLAMO) | **Corregido**: error en la fórmula de enero |
-| 4000008837 PIMARES | 28.233.858 (Fijo + Escala) | CON RECLAMO (BORRADOR por la ZME80) | **Corregido** · Presentación armada |
+| 4000008837 PIMARES | 28.223.657 (Fijo + Escala) | CON RECLAMO (BORRADOR por la ZME80) | **Corregido** · Presentación armada |
 | 4000008885 WMART | 874.607 (B2B) | CON RECLAMO | OK · Presentación armada |
 | 4000008973 TAPIA Y ALVAREZ | −8.022.825 | RESULTADO NEGATIVO, analizado sin reclamo | OK |
 
